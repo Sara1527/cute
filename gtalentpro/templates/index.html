@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %} 
+
+<div class="container">
+
+  	<section class="section">
+  		<br>
+  		<img src="{% static 'img/jumbotron.png' %}" width="100%" alt="Banner image" />
+  	</section>
+
+    <section class="section">
+      <form method="GET" action="search_jobs/">
+        <input type="text" name="search" placeholder="Search by role, location etc." />
+        <input type="submit" value="Search" />
+      </form>
+    </section>
+
+    <section class="browse-catagories section">
+      <div class="container">
+        <div class="section-header">  
+          <h2 class="section-title">Our Approach</h2>
+          <p>Connected Campuses and Connected Corporates</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-xs-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-xs-12">
+                <a href="/profiles/" class="img-box">
+                  <div class="img-box-content">
+                    <h4>Candidates</h4>
+                    <span>1,000,000+</span>
+                  </div>
+                  <div class="img-box-background">
+                    <img style="border-radius: 35px;" class="img-fluid" src="{% static 'img/candidates-block.png' %}" alt="">
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-6 col-xs-12">
+                <a href="/university/" class="img-box">
+                  <div class="img-box-content">
+                    <h4>Universities</h4>
+                    <span>1,000+</span>
+                  </div>
+                  <div class="img-box-background">
+                    <img style="border-radius: 35px;" class="img-fluid" src="{% static 'img/universities-block.png' %}" alt="">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-xs-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-xs-12">
+                <a href="/talentpartner/" class="img-box">
+                  <div class="img-box-content">
+                    <h4>Tech. Partners</h4>
+                    <span>100+</span>
+                  </div>
+                  <div class="img-box-background">
+                    <img style="border-radius: 35px;" class="img-fluid" src="{% static 'img/tpartners-block.png' %}" alt="">
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-6 col-xs-12">
+                <a href="/jobs/" class="img-box">
+                  <div class="img-box-content">
+                    <h4>Employers</h4>
+                    <span>10,000+</span>
+                  </div>
+                  <div class="img-box-background">
+                    <img style="border-radius: 35px;" class="img-fluid" src="{% static 'img/employers-block.png' %}" alt="">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <br><br>
+  		<h6>C-Candidates</h6>
+  		<p>
+  			Campus Graduates / Experienced:  We review, access and make candidates highly employable and work with our clients to enable employment. <br>
+  			Internship / Projects: We help students with internship opportunities and project. 
+  		</p>
+  		<br>
+
+  		<h6>U- Universities</h6>
+  		<p>
+  			We work with university / college partners to bridge the employability skills gap for students, using our next-gen employability skills assessment platform. We increase employability quotient of students and make them hire-ready, hi-pot entry-level candidates.
+  		</p>
+  		<br>
+
+  		<h6>T- Technology Partners</h6>
+  		<p>
+  			We work with world-renowned technology partners.
+  		</p>
+  		<br>
+
+  		<h6>E- Employer</h6>
+  		<p>
+  			A unique diverse talent enablement company. we provide a powerful, affordable, user-friendly recruiting solution to organizations of any size. We have partnered with leading assessment providers, pre-qualify candidates and help organizations to hire the right talent fast. 
+  		</p>
+
+      {% lorem 3 random %}
+    </section>
+
+    <section class="browse-catagories section">
+      <div class="section-header">
+  		  <h2 class="section-title">How it Works</h2>
+  		  <img src="{% static 'img/gtalentpro-how-it-works.png' %}" width="99%" alt="intro image">
+      </div>
+  	</section>
+
+</div>
+
+{% endblock %}
+
+
